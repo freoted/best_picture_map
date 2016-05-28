@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- test git comment - is head in right place?-->
+<html lang="en">
+  <head>
+	<!-- <meta charset="utf-8"> -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Blue Dirt Maps</title>
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+  	<link href="css/oscars_test.css" rel="stylesheet">
+  	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  	<!-- Loads Google Map API -->
+  	<script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?">
+  	</script>
+  	<script src="js/markerclusterer.js"></script>
+    <!-- <script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/src/markerclusterer.js" ></script> -->
+    <script src="js/oms.min.js"></script>
+  	<script src="js/film_data1.js"></script>
+  </head>
+  <body>
+
+    <!--   navigation bar -->
+  	<nav id = "navigation-Bar" class="navbar navbar-inverse navbar-static-top">
+  		<div class="container">
+  			<div class="navbar-header">
+  				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+  					<span class="sr-only">Toggle navigation</span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  				</button>
+  				<a class="navbar-brand" href="http://www.bluedirtmaps.com/">Blue Dirt Maps</a>
+  			</div>
+  			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  				<ul class="nav navbar-nav navbar-right">
+  					<li><a href="http://www.bluedirtmaps.com/blog/tag/google-maps-api/">Google Maps</a></li>
+  					<li><a href="http://www.bluedirtmaps.com/blog/tag/illustrator/">Illustrator maps</a></li>
+  					<li><a href="http://www.bluedirtmaps.com/contact.html">Contact</a></li>
+  				</ul>
+  			</div>
+  		</div>
+  	</nav>
+    <div id="map_canvas" class="map_canvas"></div>
+
+		<!-- film form-->
+		<div id = "film_form">
+			<form name="location">
+				<select name="filmTitle" id="movieTitle" class="form-control" onChange="displaySingleFilm(this)">
+					  <option disabled>Choose a movie title</option>
+				</select>
+			</form>
+		</div>
+
+    <!-- Modal test-->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Instructions</h4>
+      </div>
+      <div class="modal-body">
+        <p>The map shows filming locations of all movies that won 'Best Picture' at the Academy Awards.</p>
+        <ul>
+          <li>To see markers for an individual movie, select it from the menu. Click on a marker for more information.</li>
+          <li>Swap to Satellite view ("hybrid") using the Map menu in the bottom right corner</li>
+          <li>You can report errors using the <b>Contact</b> form at the top right of the page</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+	<!-- Scripts-->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+  <script language="JavaScript" src="js/oscars_oms_mc.js"></script>
+  </body>

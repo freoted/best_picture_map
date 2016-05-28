@@ -1,0 +1,52 @@
+/* custom css - add below bootstrap to override */
+.navbar {
+	margin-bottom: 0;
+}
+/* A few simple styles to the main tags. I’m loading in the Montserrat font on the entire page, I’ve made the headers bold, and I’ve made the background dark and the text light. */
+body {
+	background: #3E4649;
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
+}
+h1,
+h2 {
+	font-weight: bold;
+}
+
+p.big {
+    line-height: 200%;
+}
+
+/* strips out auto bottom margin that is added to a paragraph in bootstrap - needed when p tag is used in pop up window javascript - otherwise it is filled with bootstrap styled text*/
+.map_container p {
+	margin-bottom: 0;
+}
+
+.map_canvas{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#film_form {
+	position: absolute;
+	left: 11px;
+	top: 60px;
+	width: 250px;
+	white-space: normal;
+}
+
+#movieTitle {
+	width: 250px;
+	white-space: normal;
+}
+
+#zoomButton {
+	position: absolute;
+	left: 11px;
+	top: 100px;
+}

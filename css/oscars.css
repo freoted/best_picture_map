@@ -1,0 +1,186 @@
+/* custom css - add below bootstrap to override */
+
+/*First, I’m going to get rid of that pesky space between the navbar and the jumbotron.*/
+.navbar {
+	margin-bottom: 0;
+}
+
+/* A few simple styles to the main tags. I’m loading in the Montserrat font on the entire page, I’ve made the headers bold, and I’ve made the background dark and the text light. */
+body {
+	background: #3E4649;
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
+}
+h1,
+h2 {
+	font-weight: bold;
+}
+
+
+p.big {
+    line-height: 200%;
+}
+
+/* I’m going to make the jumbotron blue and centered. */
+.jumbotron {
+	/* background: #2A7099; */
+	background: #305B9F;
+	color: white;
+	text-align: center;
+	margin-bottom:0;
+}
+.jumbotron p {
+	color: white;
+	font-size: 26px;
+}
+
+/* I’m going to make the navbar a different shade of dark, make the links lighter, and change the background color on hover. */
+.navbar-inverse {
+	background: #2E2F31;
+	border: 0;
+}
+.navbar-inverse .navbar-nav li a {
+	color: #f7f7f7;
+	font-size: 16px;
+}
+.navbar-inverse .navbar-nav li a:hover {
+	background: #4B71AE;
+}
+
+/* The dropdown menu has its own classes, so I’m also going to change the background color on these and add a little padding. */
+
+.dropdown-menu {
+	background: #2E2F31;
+	border-radius: 0;
+	border: 0;
+}
+.dropdown-menu li a {
+	padding: 10px;
+}
+.navbar-inverse .navbar-nav .dropdown-menu li a:hover {
+	background: #082452;
+}
+
+/* The final touches to my code are going to be centering the bottom call-out, adding margin-bottom to the p tags so they stack properly on mobile, and making my glyphicons bigger. */
+
+.call-to-action {
+	text-align: center;
+}
+.call-to-action p {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-family: sans-serif;
+}
+.glyphicon-large {
+	font-size: 80px;
+}
+
+/* centre the carousel slider */
+.carousel-inner > .item  img {
+	margin: 0 auto;
+}
+
+.carousel-caption h3 {
+	background-color: rgba(0,0,0,0.5);
+	padding: 0.5em;
+}
+
+/*margin above the glyphicons*/
+.grid {
+	margin-top:20px;
+}
+
+.carousel-indicators {
+	bottom:0;
+}
+/* Media query set - */
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+	h3 {
+		font-size: 1.5em;
+	}
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	h3 {
+		font-size: 1.2em;
+	}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	h3 {
+		font-size: 1.1em;
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	h3 {
+		font-size: 1em;
+	}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	h3 {
+		font-size: 0.9em;
+	}
+}
+
+.col-sm-3 {
+	margin-top: 10px;
+}
+
+
+#grid_container{
+  width: 100%;
+  margin: 0 auto;
+  margin-top:0px;
+}
+
+.map_container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 45%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+
+/* strips out auto bottom margin that is added to a paragraph in bootstrap - needed when p tag is used in pop up window javascript - otherwise it is filled with bootstrap styled text*/
+.map_container p {
+
+	margin-bottom: 0;
+
+}
+.map_container .map_canvas{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#film_form {
+	position: absolute;
+	left: 11px;
+	top: 60px;
+}
+
+#zoomButton {
+	position: absolute;
+	left: 120px;
+	top: 17px;
+}
+
+.container-fluid {
+	padding-top: 20px;
+	background-color: #434D64;
+}
+
+.container-fluid  p {
+	font-size: 16px;
+	color: #cdcdcd;
+}
